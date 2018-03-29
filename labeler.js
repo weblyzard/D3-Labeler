@@ -1,4 +1,17 @@
-(function() {
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+      // AMD. Register as an anonymous module.
+      define(['d3'], factory);
+  } else if (typeof module === 'object' && module.exports) {
+      // Node. Does not work with strict CommonJS, but
+      // only CommonJS-like environments that support module.exports,
+      // like Node.
+      module.exports = factory(require('d3'));
+  } else {
+      // Browser globals (root is window)
+      root.returnExports = factory(root.d3);
+  }
+})(typeof self !== 'undefined' ? self : this, function (d3) {
   d3.labeler = function() {
     var lab = [],
       anc = [],
