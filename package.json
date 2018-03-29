@@ -1,0 +1,9 @@
+{
+  "name": "d3-labeler",
+  "version": "0.0.1",
+  "description": "D3 plug-in for automatic label placement using simulated annealing. Forked from https://github.com/tinker10/D3-Labeler",
+  "main": "labeler.js",
+  "repository": "gitlab@gitlab.semanticlab.net:portal-lib/D3-Labeler.git",
+  "author": "Evan Wang <ewang7100@gmail.com>",
+  "license": "MIT"
+}
